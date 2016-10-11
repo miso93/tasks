@@ -80,7 +80,7 @@ class TasksController extends Controller
         $task = Task::find($id);
         $task->update($request->input());
         App::make('pusher')
-            ->trigger('tasks', 'edit-task', $task);
+            ->trigger('tasks', 'edit-task', Task::find($id));
 
         return $task;
     }
