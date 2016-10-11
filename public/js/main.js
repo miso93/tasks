@@ -5,7 +5,7 @@
 
 Pusher.logToConsole = true;
 
-var pusher = new Pusher('1a1b52e53ad9d652956b', {
+var pusher = new Pusher(getPusherKey(), {
     cluster: 'eu',
     encrypted: true
 });

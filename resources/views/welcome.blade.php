@@ -60,6 +60,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.0.3/vue-resource.min.js"></script>
 <script src="https://js.pusher.com/3.2/pusher.min.js"></script>
 
+
+<script>
+    function getPusherKey(){
+        return "{{config('pusher.connections.main.auth_key')}}"
+    }
+</script>
 <script src="/js/main.js">
 
 </script>
